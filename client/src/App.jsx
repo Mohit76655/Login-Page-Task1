@@ -14,16 +14,18 @@ axios.defaults.withCredentials = true;
 
 function App() {
   return (
-    <UserContextProvider>
-      <Navbar />
-      <Toaster position="bottom-right" toastOptions={{ duration: 2000 }} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-    </UserContextProvider>
+    <div className="flex flex-col ">
+      <UserContextProvider>
+        <Navbar />
+        <Toaster position="bottom-right" toastOptions={{ duration: 2000 }} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </UserContextProvider>
+    </div>
   );
 }
 

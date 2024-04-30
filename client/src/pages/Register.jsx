@@ -33,17 +33,17 @@ const Register = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-slate-200">
+    <div className="flex justify-center items-center h-screen bg-hero-img bg-center bg-cover bg-no-repeat">
       <form
-        className="flex flex-col gap-5 border border-b-4 w-1/4 h-1/2 justify-center items-center rounded-md border-blue-200 bg-slate-300"
+        className="flex flex-col gap-6 w-1/4 h-1/2 justify-center items-center rounded-md bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-300"
         onSubmit={registerUser}
       >
-        <h3 className=" font-bold text-xl">Sign Up</h3>
+        <h3 className=" font-bold text-xl text-white">Sign Up</h3>
         {/* <label>Name</label> */}
-        <div className="bg-slate-100 rounded-md flex items-center justify-center pl-1">
-          <i className="ri-user-line"></i>
+        <div className="rounded-md flex items-center justify-center pl-1 border border-gray-300">
+          <i className="ri-user-line text-white"></i>
           <input
-            className="bg-transparent placeholder-slate-400 focus:outline-none h-8 rounded-md p-4"
+            className="bg-transparent placeholder-slate-400 focus:outline-none h-8 rounded-md p-4 caret-white text-white"
             required
             type="text"
             placeholder="Enter Name..."
@@ -52,10 +52,10 @@ const Register = () => {
           />
         </div>
         {/* <label>Email</label> */}
-        <div className="bg-slate-100 rounded-md flex items-center justify-center pl-1">
-          <i className="ri-mail-line"></i>
+        <div className="rounded-md flex items-center justify-center pl-1 border border-gray-300">
+          <i className="ri-mail-line text-white"></i>
           <input
-            className="bg-transparent placeholder-slate-400 focus:outline-none h-8 rounded-md p-4"
+            className="bg-transparent placeholder-slate-400 focus:outline-none h-8 rounded-md p-4 caret-white text-white"
             required
             type="email"
             placeholder="Enter Email..."
@@ -64,10 +64,10 @@ const Register = () => {
           />
         </div>
         {/* <label>Password</label> */}
-        <div className="bg-slate-100 rounded-md flex items-center justify-center pl-1">
-          <i className="ri-lock-line"></i>
+        <div className="rounded-md flex items-center justify-center pl-1 border border-gray-300">
+          <i className="ri-lock-line text-white"></i>
           <input
-            className="bg-transparent placeholder-slate-400 focus:outline-none h-8 p-4"
+            className="bg-transparent placeholder-slate-400 focus:outline-none h-8 p-4  caret-white text-white"
             required
             type="text"
             placeholder="Enter Password..."
@@ -77,14 +77,14 @@ const Register = () => {
         </div>
         <div className="flex flex-col justify-center items-center">
           <button
-            className="rounded-2xl p-1 border w-32 bg-blue-500 text-white hover:bg-blue-700 mb-4"
+            className="rounded-2xl p-1 border w-32 bg-transparent text-white hover:border-blue-700 mb-4 active:border-green-500"
             type="submit"
           >
             Submit
           </button>
-          <Link className="text-center text-sm" to="/login">
+          {/* <Link className="text-center text-sm text-white" to="/login">
             Already have a Account.
-          </Link>
+          </Link> */}
         </div>
       </form>
     </div>

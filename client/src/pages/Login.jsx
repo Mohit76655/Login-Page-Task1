@@ -49,7 +49,7 @@ const Login = () => {
         <div className=" border border-gray-300 rounded-md flex items-center justify-center pl-1">
           <i className="ri-lock-line text-white"></i>
           <input
-            className=" h-8 caret-white p-4 bg-transparent placeholder-slate-400 focus:outline-none"
+            className="text-white h-8 caret-white p-4 bg-transparent placeholder-slate-400 focus:outline-none"
             type="password"
             placeholder="Enter Password..."
             value={data.password}
@@ -59,7 +59,7 @@ const Login = () => {
         <div className="flex flex-col items-center justify-center">
           <button
             type="submit"
-            className="rounded-2xl p-1 border w-32 bg-transparent text-white hover:border-blue-500 active:border-green-500"
+            className="rounded-2xl p-1 border w-32 bg-transparent text-white hover:border-blue-700 active:border-green-500"
           >
             Login
           </button>

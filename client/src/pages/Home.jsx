@@ -11,12 +11,21 @@ const Home = () => {
         <h1 className=" font-bold text-8xl text-slate-300">HOME</h1>
         {!!user && (
           <div className="flex flex-col items-center justify-center gap-4">
-            <h2 className=" text-4xl font-bold">Hi {user.name} !</h2>
+            <h2 className=" text-4xl font-bold text-white">
+              Hi{" "}
+              <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+                {user.name}
+              </span>{" "}
+              !
+            </h2>
             <Link
-              className=" text-2xl font-semibold text-blue-500"
+              className=" text-2xl font-semibold text-blue-200"
               to="/dashboard"
             >
-              let's visit Dashboard
+              let's visit{" "}
+              <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+                Dashboard
+              </span>
             </Link>
           </div>
         )}

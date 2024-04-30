@@ -7,7 +7,7 @@ const Home = () => {
   const { user } = useContext(UserContext);
   return (
     <>
-      <div className="flex flex-col gap-8 justify-center items-center h-screen bg-slate-200">
+      <div className="flex flex-col gap-8 justify-center items-center h-screen bg-hero-img bg-center bg-cover bg-no-repeat">
         <h1 className=" font-bold text-8xl text-slate-300">HOME</h1>
         {!!user && (
           <div className="flex flex-col items-center justify-center gap-4">
